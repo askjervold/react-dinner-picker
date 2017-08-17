@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import FilteredList from "./filteredLists/FilteredLists";
+import dishes from "./resources/dishes.js";
 
 class App extends Component {
   render() {
@@ -8,6 +10,7 @@ class App extends Component {
         <div className="App-header">
           <h2>What's for dinner?</h2>
         </div>
+        <FilteredList dishes={dishes} filter="protein" />
       </div>
     );
   }
