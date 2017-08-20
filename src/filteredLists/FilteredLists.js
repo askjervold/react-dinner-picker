@@ -42,6 +42,7 @@ class FilteredLists extends Component {
                 <div className="lists-container">
                 {
                     this.getFilterValues()
+                        .sort((a, b) => a > b)
                         .map((value, index) =>
                             <List 
                             key={index}
