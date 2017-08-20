@@ -18,6 +18,7 @@
 }
 
 .list > h3 {
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -39,4 +40,5 @@
 .dish .dish-info {
     font-style: italic;
     display: block;
+    text-transform: capitalize;
 }

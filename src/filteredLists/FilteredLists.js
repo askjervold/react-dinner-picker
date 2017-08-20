@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import List from "../list/List";
+import "./filteredLists.css";
 
 class FilteredLists extends Component {
     constructor(props) {
@@ -37,7 +38,7 @@ class FilteredLists extends Component {
     render() {
         return (
             <div className="filtered-lists">
-                <h2>Sorted by <em className="filter-name">{this.props.filter}</em></h2>
+                <h2>All dishes, sorted by <em className="filter-name">{this.props.filter}</em></h2>
                 <div className="lists-container">
                 {
                     this.getFilterValues()

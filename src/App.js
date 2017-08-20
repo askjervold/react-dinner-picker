@@ -8,13 +8,14 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h2>What's for dinner?</h2>
+          <nav className="sort">
+            <ul>
+                <li><Link to={"/protein"} title="Sort by protein">protein</Link></li>
+                <li><Link to={"/category"} title="Sort by category">category</Link></li>
+                <li><Link to={"/time"} title="Sort by time">time</Link></li>
+            </ul>
+          </nav>
         </div>
-        <h3>See all dishes, sorted by:</h3>
-        <ul>
-            <li><Link to={"/protein"}>protein</Link></li>
-            <li><Link to={"/category"}>category</Link></li>
-            <li><Link to={"/time"}>time</Link></li>
-        </ul>
       </div>
     );
   }
