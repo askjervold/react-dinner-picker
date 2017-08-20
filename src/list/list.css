@@ -1,3 +1,17 @@
+.lists-container {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    min-width: 250px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
 .list ul {
     list-style: none;
     padding-left: 0;
@@ -7,7 +21,22 @@
     text-transform: uppercase;
 }
 
+.dish {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: dashed 1px #888;
+}
+
+.dish:first-of-type {
+    border-top: dashed 1px #888;
+}
+
 .dish .dish-name {
     display: block;
     font-weight: bold;
+}
+
+.dish .dish-info {
+    font-style: italic;
+    display: block;
 }

@@ -37,7 +37,8 @@ class FilteredLists extends Component {
     render() {
         return (
             <div className="filtered-lists">
-                <h2>Sorted by <em class="filter-name">{this.props.filter}</em></h2>
+                <h2>Sorted by <em className="filter-name">{this.props.filter}</em></h2>
+                <div className="lists-container">
                 {
                     this.getFilterValues()
                         .map((value, index) =>
@@ -47,6 +48,7 @@ class FilteredLists extends Component {
                             filterValue={value}
                             dishes={this.state.dishes} />)
                 }
+                </div>
             </div>
         );
     }

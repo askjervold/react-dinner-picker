@@ -1,18 +1,6 @@
 import React, {Component} from "react";
 import "./list.css";
-
-const Dish = ({
-    name,
-    protein,
-    category,
-    time
-}) =>
-    <li>
-        <div className="dish-name">{name}</div>
-        <div className="protein">{protein}</div>
-        <div className="category">{category}</div>
-        <div className="time">{time}</div>
-    </li>;
+import Dish from "../dish/Dish";
 
 class List extends Component {
     constructor(props) {
@@ -37,7 +25,11 @@ class List extends Component {
                     {
                         this.state.dishes
                             .filter(this.filterDishes)
-                            .map((dish, index) => <Dish key={index} {...dish} />)
+                            .map((dish, index) => 
+                                <li className="dish" key={index}>
+                                    <Dish dish={dish} filterName={this.state.filterName} />
+                                </li>
+                            )
                     }
                 </ul>
             </div>
