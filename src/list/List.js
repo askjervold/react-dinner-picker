@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./list.css";
 
 const Dish = ({
     name,
@@ -7,10 +8,10 @@ const Dish = ({
     time
 }) =>
     <li>
-        <span className="dishName">{name}</span>
-        <span className="protein">{protein}</span>
-        <span className="category">{category}</span>
-        <span className="time">{time}</span>
+        <div className="dish-name">{name}</div>
+        <div className="protein">{protein}</div>
+        <div className="category">{category}</div>
+        <div className="time">{time}</div>
     </li>;
 
 class List extends Component {

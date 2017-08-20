@@ -37,7 +37,7 @@ class FilteredLists extends Component {
     render() {
         return (
             <div className="filtered-lists">
-                <h2>Sorted by <em>{this.props.filter}</em></h2>
+                <h2>Sorted by <em class="filter-name">{this.props.filter}</em></h2>
                 {
                     this.getFilterValues()
                         .map((value, index) =>
