@@ -4,19 +4,15 @@ import "./dish.css";
 class Dish extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            dish: props.dish,
-            filterName: props.filterName
-        }
         this.getNonfilteredDishInfos = this.getNonfilteredDishInfos.bind(this);
     }
 
     getNonfilteredDishInfos() {
-        let dishProps = Object.keys(this.state.dish);
+        let dishProps = Object.keys(this.props.dish);
         let nonfilteredInfoProps = [];
 
         dishProps.forEach((propName) => {
-            if (propName !== "name" && propName !== this.state.filterName) {
+            if (propName !== "name" && propName !== this.props.filterName) {
                 nonfilteredInfoProps.push(propName);
             }
         });
@@ -27,11 +23,11 @@ class Dish extends Component {
     render() {
         return (
             <div className="dish">
-                <div className="dish-name">{this.state.dish.name}</div>
+                <div className="dish-name">{this.props.dish.name}</div>
                 {
                     this.getNonfilteredDishInfos()
                         .map((key, index) =>
-                            <span key={index} className="dish-info">{key}: {this.state.dish[key]}</span>
+                            <span key={index} className="dish-info">{key}: {this.props.dish[key]}</span>
                         )
                 }
             </div>

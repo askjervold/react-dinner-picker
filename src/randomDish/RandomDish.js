@@ -33,7 +33,7 @@ class RandomDish extends Component {
             <div className="random-dish">
                 <h2>How about...</h2>
                 <Dish dish={this.state.randomDish}/>
-                <button value="No thanks" onClick={() => this.updateRandomDish()}/>
+                <button onClick={() => this.updateRandomDish()}>No thanks</button>
             </div>
         );
     }
