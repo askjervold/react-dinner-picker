@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./dish.css";
 
 class Dish extends Component {
     constructor(props) {
@@ -25,7 +26,7 @@ class Dish extends Component {
 
     render() {
         return (
-            <div className="diss">
+            <div className="dish">
                 <div className="dish-name">{this.state.dish.name}</div>
                 {
                     this.getNonfilteredDishInfos()

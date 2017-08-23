@@ -23,8 +23,12 @@
   display: flex;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
   justify-content: center;
+}
+
+.sort .home-button {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .sort li {

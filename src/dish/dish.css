@@ -1,0 +1,17 @@
+.dish {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: dashed 1px #888;
+    border-top: dashed 1px #888;
+}
+
+.dish .dish-name {
+    display: block;
+    font-weight: bold;
+}
+
+.dish .dish-info {
+    font-style: italic;
+    display: block;
+    text-transform: capitalize;
+}

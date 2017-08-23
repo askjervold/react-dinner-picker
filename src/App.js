@@ -10,9 +10,10 @@ class App extends Component {
           <h2>What's for dinner?</h2>
           <nav className="sort">
             <ul>
-                <li><Link to={"/protein"} title="Sort by protein">protein</Link></li>
-                <li><Link to={"/category"} title="Sort by category">category</Link></li>
-                <li><Link to={"/time"} title="Sort by time">time</Link></li>
+                <li><Link to={"/"} title="Front page" className="home-button">Home</Link></li>
+                <li><Link to={"/protein"} title="Sort by protein">Protein</Link></li>
+                <li><Link to={"/category"} title="Sort by category">Category</Link></li>
+                <li><Link to={"/time"} title="Sort by time">Time</Link></li>
             </ul>
           </nav>
         </div>

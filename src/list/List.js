@@ -26,7 +26,7 @@ class List extends Component {
                         this.state.dishes
                             .filter(this.filterDishes)
                             .map((dish, index) => 
-                                <li className="dish" key={index}>
+                                <li key={index}>
                                     <Dish dish={dish} filterName={this.state.filterName} />
                                 </li>
                             )
