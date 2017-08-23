@@ -223,7 +223,7 @@ const dishes = [
     },
     {
         "name": "Pannekaker",
-        "protein": "bacon",
+        "protein": "none/self",
         "category": "husmannskost",
         "time": 3
     },
@@ -232,6 +232,30 @@ const dishes = [
         "protein": "kylling",
         "category": "helg",
         "time": 3
+    },
+    {
+        "name": "Kalkunklump",
+        "protein": "none/self",
+        "category": "helg",
+        "time": 3
+    },
+    {
+        "name": "Ribbe",
+        "protein": "none/self",
+        "category": "helg",
+        "time": 4
+    },
+    {
+        "name": "Medisterkaker",
+        "protein": "none/self",
+        "category": "husmannskost",
+        "time": 2
+    },
+    {
+        "name": "Pølser",
+        "protein": "none/self",
+        "category": "junk",
+        "time": 1
     },
 ];
 
